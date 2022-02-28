@@ -41,13 +41,19 @@ const Index: Component = () => {
 						<div class={styles.titleText}>
 							Play Wordle with a Leaderboard
 						</div>
-						<img src={wordleToLeaderboardSVG} />
+						<img
+							src={wordleToLeaderboardSVG}
+							alt="wordle going to leaderboard"
+						/>
 					</div>
 					<div class={`${styles.section} ${styles.two}`}>
 						<div class={styles.titleText}>
 							Different sizes and types
 						</div>
-						<img src={differentTypesOfWordleSVG} />
+						<img
+							src={differentTypesOfWordleSVG}
+							alt="different sizes of wordles and wordles with letters and numbers"
+						/>
 					</div>
 				</div>
 			</div>

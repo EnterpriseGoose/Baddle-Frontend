@@ -9,7 +9,15 @@
 }
 
 .title {
-	margin-left: calc(10vw - 30px);
+	padding-left: calc(15vw - 30px);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.title a {
+	text-decoration: none;
+	color: inherit;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -17,14 +25,13 @@
 
 .title h1 {
 	margin: 0;
-	font-size: calc(1vw + 30px);
+	font-size: min(8vw min(calc(5vw + 40px), 10vh));
 }
 
 .title img {
-	margin-left: 5vw;
-	margin-right: 0.1vw;
-	height: calc(1vw + 40px);
-	width: calc(1vw + 40px);
+	padding-right: 0.1vw;
+	height: calc(1vw + 30px);
+	width: calc(1vw + 30px);
 }
 
 .logInButton {

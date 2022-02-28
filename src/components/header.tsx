@@ -1,5 +1,5 @@
-import type { Component, JSX } from 'solid-js';
-import { render, Show } from 'solid-js/web';
+import type { Component } from 'solid-js';
+import { Show } from 'solid-js/web';
 
 import styles from './header.module.css';
 import logo from '../assets/baddle-logo.png';
@@ -11,8 +11,10 @@ const Header: Component<{ loggedIn: boolean }> = (props) => {
 	return (
 		<div className={styles.root}>
 			<div className={styles.title}>
-				<img src={logo} alt="B" width="50" height="50" />
-				<h1>addle</h1>
+				<a href="/">
+					<img src={logo} alt="B" width="50" height="50" />
+					<h1>addle</h1>
+				</a>
 			</div>
 			<Show
 				when={props.loggedIn === true}
@@ -31,7 +33,8 @@ const Header: Component<{ loggedIn: boolean }> = (props) => {
 						}}
 						onMouseUp={(e) => {
 							e.currentTarget.src = googleSignInFocused;
-						}}>
+						}}
+						alt="Login With Google">
 						Login With Google
 					</img>
 				}>
