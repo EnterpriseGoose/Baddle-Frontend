@@ -1,0 +1,33 @@
+.root {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: min(5vh, 1vw);
+	margin-bottom: 5vh;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	margin-left: calc(10vw - 30px);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.title h1 {
+	margin: 0;
+	font-size: calc(1vw + 30px);
+}
+
+.title img {
+	margin-left: 5vw;
+	margin-right: 0.1vw;
+	height: calc(1vw + 40px);
+	width: calc(1vw + 40px);
+}
+
+.logInButton {
+	margin-right: 5vw;
+	height: calc(0.7vw + 35px);
+}
