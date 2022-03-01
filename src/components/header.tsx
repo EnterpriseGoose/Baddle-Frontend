@@ -1,5 +1,6 @@
 import type { Component } from 'solid-js';
 import { Show } from 'solid-js/web';
+import { Link } from 'solid-app-router';
 
 import styles from './header.module.css';
 import logo from '../assets/baddle-logo.png';
@@ -11,10 +12,10 @@ const Header: Component<{ loggedIn: boolean }> = (props) => {
 	return (
 		<div className={styles.root}>
 			<div className={styles.title}>
-				<a href="/">
+				<Link href="/">
 					<img src={logo} alt="B" width="50" height="50" />
 					<h1>addle</h1>
-				</a>
+				</Link>
 			</div>
 			<Show
 				when={props.loggedIn === true}
