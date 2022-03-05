@@ -2,7 +2,7 @@ import { Component, createEffect } from 'solid-js';
 
 import styles from './tile.module.css';
 
-const Tile: Component<{ children: any; color?: string; size?: string }> = (
+const Tile: Component<{ children: Element; color?: string; size?: string }> = (
 	props
 ) => {
 	let tile!: HTMLDivElement;
@@ -41,7 +41,7 @@ const Tile: Component<{ children: any; color?: string; size?: string }> = (
 		tile.animate(
 			[
 				{
-					transform: 'rotateX(0deg)',
+					transform: 'rotateX(0deg)'
 				},
 				{
 					backgroundColor: window
@@ -50,19 +50,19 @@ const Tile: Component<{ children: any; color?: string; size?: string }> = (
 					borderColor: window
 						.getComputedStyle(tile)
 						.getPropertyValue('border-color'),
-					offset: 0.49,
+					offset: 0.49
 				},
 				{
 					transform: 'rotateX(90deg)',
 					backgroundColor: bgColor,
 					borderColor: borderColor,
-					offset: 0.5,
+					offset: 0.5
 				},
 				{
 					transform: 'rotateX(0deg)',
 					backgroundColor: bgColor,
-					borderColor: borderColor,
-				},
+					borderColor: borderColor
+				}
 			],
 			{ duration: 700, fill: 'forwards' }
 		);
@@ -70,7 +70,7 @@ const Tile: Component<{ children: any; color?: string; size?: string }> = (
 
 	return (
 		<div
-			className={styles.root}
+			className={styles.tile}
 			ref={tile}
 			style={`font-size: ${props.size}`}>
 			<div>{props.children}</div>

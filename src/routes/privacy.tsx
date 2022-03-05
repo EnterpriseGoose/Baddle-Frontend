@@ -1,12 +1,12 @@
 /* @refresh reload */
-import { Component, createSignal, onMount } from 'solid-js';
-import { render, style } from 'solid-js/web';
+import { Component } from 'solid-js';
+import { render } from 'solid-js/web';
 
 import styles from '../styles/privacy.module.css';
 
 import Layout from '../components/layout';
 
-const Index: Component = () => {
+const Privacy: Component = () => {
 	return (
 		<Layout>
 			<div class={styles.main}>
@@ -602,4 +602,4 @@ const Index: Component = () => {
 	);
 };
 
-render(() => <Index />, document.getElementById('root') as HTMLElement);
+export default Privacy;

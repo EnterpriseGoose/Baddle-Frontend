@@ -1,12 +1,4 @@
-import {
-	Component,
-	createEffect,
-	createSignal,
-	For,
-	JSX,
-	onMount,
-} from 'solid-js';
-import { render, Show } from 'solid-js/web';
+import { Component, createEffect, createSignal, For } from 'solid-js';
 import Tile from './tile';
 
 import styles from './tile-row.module.css';
@@ -28,7 +20,7 @@ const TileRow: Component<{ children: any; colors: string; size?: string }> = (
 	});
 
 	return (
-		<div className={styles.root}>
+		<div className={styles.tileRow}>
 			<For each={[...props.children]}>
 				{(tile: string, index) => (
 					<Tile color={colors()![index()]} size={props.size}>

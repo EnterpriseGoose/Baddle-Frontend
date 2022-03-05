@@ -1,6 +1,4 @@
-/* @refresh reload */
 import { Component, createSignal, onMount } from 'solid-js';
-import { render } from 'solid-js/web';
 
 import styles from '../styles/index.module.css';
 
@@ -61,4 +59,4 @@ const Index: Component = () => {
 	);
 };
 
-render(() => <Index />, document.getElementById('root') as HTMLElement);
+export default Index;

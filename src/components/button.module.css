@@ -1,0 +1,18 @@
+.button {
+	background-color: rgb(62, 62, 151);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	border-radius: 0.1em;
+}
+
+.style-outline {
+	background-color: transparent;
+	outline: #c5c5c5 solid 0.1em;
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
