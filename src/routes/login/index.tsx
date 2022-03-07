@@ -1,8 +1,8 @@
 import { Component } from 'solid-js';
 import { Link } from 'solid-app-router';
 
-import Layout from '../../components/layout';
-import { loggedIn } from '../../components/layout';
+import Layout from '../../components/Layout';
+import { loggedIn } from '../../components/Layout';
 
 import styles from '../../styles/login/index.module.css';
 

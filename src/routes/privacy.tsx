@@ -1,10 +1,9 @@
 /* @refresh reload */
 import { Component } from 'solid-js';
-import { render } from 'solid-js/web';
 
 import styles from '../styles/privacy.module.css';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const Privacy: Component = () => {
 	return (

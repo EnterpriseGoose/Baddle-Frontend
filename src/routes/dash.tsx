@@ -2,7 +2,7 @@ import { Component } from 'solid-js';
 
 import styles from '../styles/index.module.css';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const Dash: Component = () => {
 	return (
