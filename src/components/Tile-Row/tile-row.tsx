@@ -1,5 +1,5 @@
 import { Component, createEffect, createSignal, For } from 'solid-js';
-import Tile from '../tile';
+import Tile from '../Tile';
 
 import styles from './tile-row.module.css';
 

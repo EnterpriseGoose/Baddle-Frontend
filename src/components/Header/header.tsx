@@ -2,13 +2,13 @@ import type { Component } from 'solid-js';
 import { Show } from 'solid-js/web';
 import { Link } from 'solid-app-router';
 
-import Button from '../button';
+import Button from '../Button';
 
 import styles from './header.module.css';
-import logo from '../assets/baddle-logo.png';
-import googleSignIn from '../assets/google-button-normal.png';
-import googleSignInFocused from '../assets/google-button-focused.png';
-import googleSignInPressed from '../assets/google-button-pressed.png';
+import logo from '../../assets/baddle-logo.png';
+import googleSignIn from '../../assets/google-button-normal.png';
+import googleSignInFocused from '../../assets/google-button-focused.png';
+import googleSignInPressed from '../../assets/google-button-pressed.png';
 
 const HeaderComponent: Component<{ loggedIn: boolean; hideLogin?: boolean }> = (
 	props

@@ -1,8 +1,8 @@
-import type { Component } from 'solid-js';
+import { Component } from 'solid-js';
+import { Link } from 'solid-app-router';
 
 import styles from './footer.module.css';
-import logo from '../assets/baddle-logo.png';
-import { Link } from 'solid-app-router';
+import logo from '../../assets/baddle-logo.png';
 
 const FooterComponent: Component = (props) => {
 	return (

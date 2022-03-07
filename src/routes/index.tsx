@@ -5,8 +5,8 @@ import styles from '../styles/index.module.css';
 import wordleToLeaderboardSVG from '../assets/wordle-to-leaderboard.svg';
 import differentTypesOfWordleSVG from '../assets/different-types-of-wordle.svg';
 
-import Layout from '../components/layout';
-import TileRow from '../components/tile-row';
+import Layout from '../components/Layout';
+import TileRow from '../components/Tile-Row';
 
 const Index: Component = () => {
 	const [secondRowColors, setSecondRowColors] = createSignal('XXX');
