@@ -3,7 +3,7 @@ import { Component, createEffect } from 'solid-js';
 import styles from './tile.module.css';
 
 const TileComponent: Component<{
-	children: any;
+	children: Element | String;
 	color?: string;
 	size?: string;
 }> = (props) => {
@@ -72,7 +72,7 @@ const TileComponent: Component<{
 
 	return (
 		<div
-			className={styles.root}
+			className={styles.tile}
 			ref={tile}
 			style={`font-size: ${props.size}`}>
 			<div>{props.children}</div>

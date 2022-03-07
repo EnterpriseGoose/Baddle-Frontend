@@ -1,4 +1,4 @@
-.root {
+.header {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -37,4 +37,9 @@
 .logInButton {
 	margin-right: 5vw;
 	height: calc(0.7vw + 35px);
+}
+
+.playButton {
+	margin-right: calc(10vw - 30px);
+	font-size: max(5vh, min(calc(2vw+10), 8vw));
 }

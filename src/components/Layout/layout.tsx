@@ -1,19 +1,22 @@
-import type { Component } from 'solid-js';
+import { Component, createSignal } from 'solid-js';
 
 import styles from './layout.module.css';
 
-import { Router } from 'solid-app-router';
 import Footer from '../Footer';
 import Header from '../Header';
 
-const LayoutComponent: Component = (props) => {
+const [loggedIn, setLoggedIn] = createSignal(false);
+
+const LayoutComponent: Component<{ chilren?: Element; hideLogin?: boolean }> = (
+	props
+) => {
 	return (
 		<div className={styles.layout}>
-			<Header loggedIn={false} />
+			<Header loggedIn={loggedIn()} hideLogin={props.hideLogin} />
 			{props.children}
 			<Footer />
 		</div>
 	);
 };
 
-export { LayoutComponent };
+export { loggedIn, setLoggedIn, LayoutComponent };

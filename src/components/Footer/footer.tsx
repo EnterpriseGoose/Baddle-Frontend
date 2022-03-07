@@ -6,7 +6,7 @@ import { Link } from 'solid-app-router';
 
 const FooterComponent: Component = (props) => {
 	return (
-		<div className={styles.root}>
+		<div className={styles.footer}>
 			<div className={styles.content}>
 				<Link href="terms" className={styles.link}>
 					Terms of Service
