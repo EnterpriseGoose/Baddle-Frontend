@@ -9,7 +9,7 @@ import styles from './button.module.css';
 // gray - gray
 // blueOutline - blue outline
 // text - no button, just text
-const Button: Component<{
+const ButtonComponent: Component<{
 	link: string;
 	style?: string;
 	children: Element | string;
@@ -27,4 +27,4 @@ const Button: Component<{
 	);
 };
 
-export default Button;
+export { ButtonComponent };
