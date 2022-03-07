@@ -2,9 +2,11 @@ import { Component, createEffect } from 'solid-js';
 
 import styles from './tile.module.css';
 
-const Tile: Component<{ children: any; color?: string; size?: string }> = (
-	props
-) => {
+const TileComponent: Component<{
+	children: any;
+	color?: string;
+	size?: string;
+}> = (props) => {
 	let tile!: HTMLDivElement;
 	let previousColor = 'default';
 	createEffect(() => {
@@ -78,4 +80,4 @@ const Tile: Component<{ children: any; color?: string; size?: string }> = (
 	);
 };
 
-export default Tile;
+export { TileComponent };

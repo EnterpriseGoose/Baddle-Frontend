@@ -2,11 +2,11 @@ import type { Component } from 'solid-js';
 
 import styles from './layout.module.css';
 
-import Header from './header';
 import { Router } from 'solid-app-router';
-import Footer from './footer';
+import Footer from '../Footer';
+import Header from '../Header';
 
-const Layout: Component = (props) => {
+const LayoutComponent: Component = (props) => {
 	return (
 		<div className={styles.layout}>
 			<Header loggedIn={false} />
@@ -16,4 +16,4 @@ const Layout: Component = (props) => {
 	);
 };
 
-export default Layout;
+export { LayoutComponent };

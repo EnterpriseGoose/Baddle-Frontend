@@ -7,13 +7,15 @@ import {
 	onMount,
 } from 'solid-js';
 import { render, Show } from 'solid-js/web';
-import Tile from './tile';
+import Tile from '../tile';
 
 import styles from './tile-row.module.css';
 
-const TileRow: Component<{ children: any; colors: string; size?: string }> = (
-	props
-) => {
+const TileRowComponent: Component<{
+	children: any;
+	colors: string;
+	size?: string;
+}> = (props) => {
 	const [colors, setColors] = createSignal([]);
 
 	createEffect(() => {
@@ -40,4 +42,4 @@ const TileRow: Component<{ children: any; colors: string; size?: string }> = (
 	);
 };
 
-export default TileRow;
+export { TileRowComponent };

@@ -4,7 +4,7 @@ import styles from './footer.module.css';
 import logo from '../assets/baddle-logo.png';
 import { Link } from 'solid-app-router';
 
-const Footer: Component = (props) => {
+const FooterComponent: Component = (props) => {
 	return (
 		<div className={styles.root}>
 			<div className={styles.content}>
@@ -22,4 +22,4 @@ const Footer: Component = (props) => {
 	);
 };
 
-export default Footer;
+export { FooterComponent };

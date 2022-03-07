@@ -8,7 +8,7 @@ import googleSignIn from '../assets/google-button-normal.png';
 import googleSignInFocused from '../assets/google-button-focused.png';
 import googleSignInPressed from '../assets/google-button-pressed.png';
 
-const Header: Component<{ loggedIn: boolean }> = (props) => {
+const HeaderComponent: Component<{ loggedIn: boolean }> = (props) => {
 	return (
 		<div className={styles.root}>
 			<div className={styles.title}>
@@ -45,4 +45,4 @@ const Header: Component<{ loggedIn: boolean }> = (props) => {
 	);
 };
 
-export default Header;
+export { HeaderComponent };
