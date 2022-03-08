@@ -16,3 +16,7 @@
 	text-decoration: none;
 	color: inherit;
 }
+
+.logInButton {
+	height: calc(0.7vw + 35px);
+}

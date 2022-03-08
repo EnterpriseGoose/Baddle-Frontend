@@ -14,3 +14,10 @@
 .logInButton {
 	height: min(10vh, 95vw);
 }
+
+.error {
+	margin-bottom: 5vh;
+	background-color: rgba(202, 108, 108, 0.719);
+	border-radius: 1.5vh;
+	padding: 0.5em;
+}
