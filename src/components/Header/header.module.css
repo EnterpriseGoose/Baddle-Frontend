@@ -41,5 +41,5 @@
 
 .playButton {
 	margin-right: calc(10vw - 30px);
-	font-size: max(5vh, min(calc(2vw+10), 8vw));
+	font-size: max(5vh, min(calc(2vw + 10), 8vw));
 }
