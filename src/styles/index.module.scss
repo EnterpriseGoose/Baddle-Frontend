@@ -24,14 +24,10 @@
 	margin-top: max(3vw, 4vh);
 	margin-bottom: max(3vw, 4vh);
 	text-align: center;
-}
 
-.section.one img {
-	width: max(50vw, 43vh);
-}
-
-.section.two img {
-	width: max(50vw, 43vh);
+	img {
+		width: max(50vw, 43vh);
+	}
 }
 
 .titleText {

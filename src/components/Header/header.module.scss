@@ -13,25 +13,25 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-}
 
-.title a {
-	text-decoration: none;
-	color: inherit;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
+	a {
+		text-decoration: none;
+		color: inherit;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 
-.title h1 {
-	margin: 0;
-	font-size: min(8vw min(calc(5vw + 40px), 10vh));
-}
+	h1 {
+		margin: 0;
+		font-size: max(2.2vw, calc(0.5vw + 30px));
+	}
 
-.title img {
-	padding-right: 0.1vw;
-	height: calc(1vw + 30px);
-	width: calc(1vw + 30px);
+	img {
+		padding-right: 0.1vw;
+		height: calc(1vw + 30px);
+		width: calc(1vw + 30px);
+	}
 }
 
 .logInButton {
@@ -41,5 +41,5 @@
 
 .playButton {
 	margin-right: calc(10vw - 30px);
-	font-size: max(5vh, min(calc(2vw + 10), 8vw));
+	font-size: max(5vh, min(calc(2vw + 10px), 8vw));
 }

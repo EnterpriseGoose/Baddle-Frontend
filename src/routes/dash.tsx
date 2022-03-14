@@ -1,6 +1,6 @@
 import { Component } from 'solid-js';
 
-import styles from '../styles/index.module.css';
+import styles from '../styles/index.module.scss';
 
 import Layout from '../components/Layout';
 

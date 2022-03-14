@@ -1,7 +1,7 @@
 import { Component } from 'solid-js';
 import { Link } from 'solid-app-router';
 
-import styles from './button.module.css';
+import styles from './button.module.scss';
 
 import googleSignIn from '../../assets/google-button-normal.png';
 import googleSignInFocused from '../../assets/google-button-focused.png';
@@ -28,7 +28,7 @@ const ButtonComponent: Component<{
 		return (
 			<Link
 				href={`https://accounts.google.com/o/oauth2/v2/auth?client_id=301025595270-dhu09d1o81kf0s7fqlj6m9p6qniq3q93.apps.googleusercontent.com&redirect_uri=${
-					import.meta.env.VITE_WEBSITE
+					window.location.origin
 				}/login/callback&response_type=code&scope=https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid&access_type=online&&state=${window.localStorage.getItem(
 					'googleAuthState'
 				)}${

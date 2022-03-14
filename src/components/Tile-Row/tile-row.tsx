@@ -1,7 +1,7 @@
 import { Component, createEffect, createSignal, For } from 'solid-js';
 import Tile from '../Tile';
 
-import styles from './tile-row.module.css';
+import styles from './tile-row.module.scss';
 
 const TileRowComponent: Component<{
 	children: any;

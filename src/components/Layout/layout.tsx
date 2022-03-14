@@ -1,6 +1,6 @@
 import { Component, createSignal } from 'solid-js';
 
-import styles from './layout.module.css';
+import styles from './layout.module.scss';
 
 import Footer from '../Footer';
 import Header from '../Header';

@@ -1,6 +1,6 @@
 import { Component, createSignal, onMount } from 'solid-js';
 
-import styles from '../styles/index.module.css';
+import styles from '../styles/index.module.scss';
 
 import wordleToLeaderboardSVG from '../assets/wordle-to-leaderboard.svg';
 import differentTypesOfWordleSVG from '../assets/different-types-of-wordle.svg';

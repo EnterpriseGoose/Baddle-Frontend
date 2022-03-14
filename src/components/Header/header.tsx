@@ -4,7 +4,7 @@ import { Link } from 'solid-app-router';
 
 import Button from '../Button';
 
-import styles from './header.module.css';
+import styles from './header.module.scss';
 import logo from '../../assets/baddle-logo.png';
 
 const HeaderComponent: Component<{ loggedIn: boolean; hideLogin?: boolean }> = (

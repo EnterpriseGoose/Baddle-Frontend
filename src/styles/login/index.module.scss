@@ -9,10 +9,11 @@
 
 .text {
 	text-align: center;
+	max-width: 80vw;
 }
 
 .logInButton {
-	height: min(10vh, 95vw);
+	height: min(22vw, max(8vh, 4vw, 60px));
 }
 
 .error {
@@ -20,4 +21,6 @@
 	background-color: rgba(202, 108, 108, 0.719);
 	border-radius: 1.5vh;
 	padding: 0.5em;
+	max-width: 80vw;
+	text-align: center;
 }

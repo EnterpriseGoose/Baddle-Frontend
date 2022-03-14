@@ -1,6 +1,6 @@
 import { Component, createEffect } from 'solid-js';
 
-import styles from './tile.module.css';
+import styles from './tile.module.scss';
 
 const TileComponent: Component<{
 	children: Element | String;

@@ -1,7 +1,7 @@
 /* @refresh reload */
 import { Component } from 'solid-js';
 
-import styles from '../styles/privacy.module.css';
+import styles from '../styles/privacy.module.scss';
 
 import Layout from '../components/Layout';
 

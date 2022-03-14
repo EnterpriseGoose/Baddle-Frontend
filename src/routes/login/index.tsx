@@ -3,7 +3,7 @@ import { Component, Show } from 'solid-js';
 import Layout from '../../components/Layout';
 import { loggedIn } from '../../components/Layout';
 
-import styles from '../../styles/login/index.module.css';
+import styles from '../../styles/login/index.module.scss';
 
 import Button from '../../components/Button';
 
