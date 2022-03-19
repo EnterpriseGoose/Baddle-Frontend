@@ -26,7 +26,6 @@ const Index: Component = () => {
 					return;
 			}
 			showError = true;
-			console.log('showing error');
 		}
 	})();
 
