@@ -7,10 +7,6 @@ const Callback: Component = (props) => {
 	const state = params.get('state');
 	const code = params.get('code');
 	const hd = params.get('hd');
-	fetch('https://baddle.requestcatcher.com/', {
-		method: 'POST',
-		body: JSON.stringify({ url: import.meta.url, test: 'test' })
-	});
 
 	if (hd !== 'chatham-nj.org') {
 		window.location.href = `${window.location.origin}/login?error=SCHOOL_ACCOUNT`;
@@ -18,8 +14,9 @@ const Callback: Component = (props) => {
 		window.location.href = `${window.location.origin}/login?error=INVALID_SESSION`;
 	} else {
 		fetch(import.meta.env.VITE_API + '/login', {
-			body: import.meta.url,
-			method: 'POST'
+			body: JSON.stringify({ code }),
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
 		});
 	}
 
