@@ -22,6 +22,10 @@ const Index: Component = () => {
 					errorToShow =
 						'Your session expired. Please try logging in again.';
 					break;
+				case 'UNKNOWN_GOOGLE':
+					errorToShow =
+						'An unknown error occured when trying to login with google. Try again or contact me.';
+					break;
 				default:
 					return;
 			}

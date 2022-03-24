@@ -4,21 +4,6 @@ import styles from '../../styles/login/callback.module.scss';
 
 const Callback: Component = (props) => {
 	const params = new URLSearchParams(window.location.search);
-	const state = params.get('state');
-	const code = params.get('code');
-	const hd = params.get('hd');
-
-	if (hd !== 'chatham-nj.org') {
-		window.location.href = `${window.location.origin}/login?error=SCHOOL_ACCOUNT`;
-	} else if (state !== window.localStorage.getItem('googleAuthState')) {
-		window.location.href = `${window.location.origin}/login?error=INVALID_SESSION`;
-	} else {
-		fetch(import.meta.env.VITE_API + '/login', {
-			body: JSON.stringify({ code }),
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-		});
-	}
 
 	return (
 		<div class={styles.background}>
